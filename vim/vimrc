@@ -1,0 +1,67 @@
+" Colors
+if has("syntax") && (&t_Co > 15)
+    set background=dark
+    syntax enable
+    if (&t_Co > 255)
+        colorscheme desert256
+        highlight Pmenu ctermfg=0 ctermbg=8
+    endif
+endif
+
+" Command
+if has("cmdline_info")
+    set ruler
+    set showcmd
+endif
+
+" Cursors
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+" Encoding
+set fileformats=unix,dos,mac
+if has("multi_byte")
+    set encoding=utf-8
+endif
+
+" Filetypes
+if has("autocmd")
+    filetype on
+    filetype plugin on
+    filetype indent on
+endif
+
+" Leaders
+nnoremap <leader>c :set cursorline! cursorcolumn!<CR>
+nnoremap <leader>h :set hlsearch!<CR>
+nnoremap <leader>l :set list!<CR>
+nnoremap <leader>n :set number!<CR>
+nnoremap <leader>p :set paste!<CR>
+nnoremap <leader>r :set relativenumber!<CR>
+nnoremap <leader>s :set spell!<CR>
+nnoremap <leader>w :set wrap!<CR>
+
+" Miscellaneous
+set backspace=indent,eol,start
+set scrolloff=1
+set shortmess+=I
+
+" Spelling
+if has("spell")
+    set spelllang=en_nz
+endif
+
+" Whitespace
+set expandtab
+set nojoinspaces
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+
+" Wrapping
+set nowrap
+if has("linebreak")
+    set linebreak
+endif

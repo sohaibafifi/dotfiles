@@ -1,0 +1,9 @@
+startup_message off
+vbell off
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{Wk}%-w%{wb}%n %t%{-}%+w %=%{..R} %H %{..B} %D %d/%m %c "
+autodetach on
+msgminwait 0
+msgwait 0
+term xterm-256color
