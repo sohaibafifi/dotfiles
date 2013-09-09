@@ -11,6 +11,8 @@ bash/bashrc.d/*
 !bash/bashrc.d/sprunge.bash
 !bash/bashrc.d/ssh.bash
 !bash/bashrc.d/tmux.bash
+!bash/bashrc.d/pacman.bash
+!bash/bashrc.d/proxy.bash
 gnupg/*
 !gnupg/*.conf
 mutt/muttrc.alternates
@@ -26,3 +28,4 @@ vim/spell/*
 vim/backup/*
 vim/swap/*
 vim/undo/*
+.~
