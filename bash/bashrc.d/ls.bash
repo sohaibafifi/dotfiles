@@ -29,3 +29,12 @@ if hash dircolors 2>/dev/null; then
     eval "$(dircolors --sh)"
 fi
 
+## ls ## {{{
+alias lr='ls -R'                    # recursive ls
+alias ll='ls -l'
+alias la='ll -A'
+alias lx='ll -BX'                   # sort by extension
+alias lz='ll -rS'                   # sort by size
+alias lt='ll -rt'                   # sort by date
+alias lm='la | more'
+# }}}
