@@ -15,6 +15,7 @@ bash/bashrc.d/*
 !bash/bashrc.d/proxy.bash
 !bash/bashrc.d/sudo.bash
 !bash/bashrc.d/tollerance.bash
+!bash/bashrc.d/new_commands.bash
 gnupg/*
 !gnupg/*.conf
 mutt/muttrc.alternates
