@@ -6,6 +6,6 @@ if [ $UID -ne 0 ]; then
     alias root='sudo -s'
     alias reboot='sudo systemctl reboot'
     alias poweroff='sudo systemctl poweroff'
-    alias update='sudo pacman -Su'
+    alias update='sudo pacman -Syu'
     alias netctl='sudo netctl'
 fi
