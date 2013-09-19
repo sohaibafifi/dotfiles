@@ -8,7 +8,7 @@ prompt() {
         on)
             # Set up pre-prompt command and prompt format
             PROMPT_COMMAND='ret=$? ; history -a'
-            PS1='\n\[\033[1;33m\][\[\033[1;32m\]\t\[\033[1;33m\]]\\[\a\][\u@\h:\w]$(prompt vcs)$(prompt job)$(prompt ret)\$'
+            PS1='\n\[\a\][\t][\u@\h:\w]$(prompt vcs)$(prompt job)$(prompt ret)\$'
 
             # Count available colors, reset, and format (decided shortly)
             local colors=$(tput colors)
@@ -21,7 +21,7 @@ prompt() {
 
             # If we have only eight colors, use bold green to make it bright
             elif ((colors == 8)); then
-                format=$(tput setaf 7)$(tput bold)
+                format=$(tput setaf 4)$(tput bold)
 
             # For non-color terminals (!), just use bold
             else
