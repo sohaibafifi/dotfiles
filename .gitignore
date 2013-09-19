@@ -17,6 +17,7 @@ bash/bashrc.d/*
 !bash/bashrc.d/tollerance.bash
 !bash/bashrc.d/new_commands.bash
 !bash/bashrc.d/safety.bash
+!bash/bashrc.d/history.bash
 gnupg/*
 !gnupg/*.conf
 mutt/muttrc.alternates

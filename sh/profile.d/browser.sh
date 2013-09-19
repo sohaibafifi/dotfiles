@@ -1,6 +1,6 @@
 # Browser
 if [ -n "$DISPLAY" ]; then
-    BROWSER='firefox'
+    BROWSER='google-chrome'
 else
     BROWSER='lynx'
 fi
